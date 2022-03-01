@@ -82,20 +82,28 @@ class CandleStickChartView: UIView {
     init(frame: CGRect, with candleSticks: [CandleStick]) {
         self.candleSticks = candleSticks
         super.init(frame: frame)
-        setupLayers()
+        self.setupLayers()
+        self.setupPinchGesture()
     }
     
     convenience init(with candleSticks: [CandleStick]) {
         self.init(frame: CGRect.zero, with: candleSticks)
-        setupLayers()
+        self.setupLayers()
+        self.setupPinchGesture()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setupLayers()
+        self.setupLayers()
+        self.setupPinchGesture()
     }
     
     // MARK: - custom func
+    
+    private func setupPinchGesture() {
+        let pinchGestureRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(handlePinch(_:)))
+        self.addGestureRecognizer(pinchGestureRecognizer)
+    }
     
     private func setupLayers() {
         // 스크롤에 포함될 전체 영역인 mainLayer
@@ -237,7 +245,7 @@ class CandleStickChartView: UIView {
         }
         self.candleSticks.indices.forEach {
             let index: Int = self.candleSticks.count - 1 - $0
-            guard $0 % drawPerCandleStickCount == 0 else {
+            guard drawPerCandleStickCount == 0 || $0 % drawPerCandleStickCount == 0 else {
                 return
             }
             let xCoord: CGFloat = getXCoord(indexOf: index)
@@ -358,6 +366,14 @@ class CandleStickChartView: UIView {
     private func getXCoord(indexOf index: Int) -> CGFloat {
         return (self.horizontalFrontRearSpace + self.candleStickWidth / 2.0) +
         CGFloat(index - 1) * (self.candleStickWidth + self.candleStickSpace)
+    }
+    
+    @objc func handlePinch(_ pinch: UIPinchGestureRecognizer) {
+        self.candleStickWidth *= pinch.scale
+        self.candleStickSpace *= pinch.scale
+        self.candleStickLineWidth *= pinch.scale
+        setNeedsLayout()
+        pinch.scale = 1
     }
 }
 
