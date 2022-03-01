@@ -76,6 +76,21 @@ class CandleStickChartView: UIView {
     
     /// 캔들스틱 값들
     private var candleSticks: [CandleStick] = []
+    /// 현재 스크롤 프레임에 보이는 캔들스틱 값들
+    private var scrollFilteredCandleSticks: [CandleStick] {
+        get {
+            let currentScroll: ClosedRange<CGFloat> = (
+                self.scrollView.contentOffset.x...(self.scrollView.contentOffset.x + self.scrollView.bounds.width)
+            )
+            return self.candleSticks.indices.filter { index in
+                let xCoord = self.getXCoord(indexOf: index)
+                return currentScroll.contains(xCoord - self.candleStickWidth) ||
+                currentScroll.contains(xCoord + self.candleStickWidth)
+            }.map { index in
+                self.candleSticks[index]
+            }
+        }
+    }
     
     // MARK: - Initializer
     
@@ -117,6 +132,8 @@ class CandleStickChartView: UIView {
         // subView로 추가
         self.addSubview(self.scrollView)
         self.backgroundColor = .clear
+        // TODO 로깅용임 제거할것
+        self.scrollView.delegate = self
     }
     
     override func layoutSubviews() {
@@ -302,11 +319,13 @@ class CandleStickChartView: UIView {
     }
     
     private func drawValue() {
-        guard let maxPrice: Double = self.candleSticks.max(by: { $0.highPrice < $1.highPrice })?.highPrice
+        guard let maxPrice: Double = self.scrollFilteredCandleSticks.max(
+            by: { $0.highPrice < $1.highPrice })?.highPrice
         else {
             return
         }
-        guard let minPrice: Double = self.candleSticks.min(by: { $0.lowPrice < $1.lowPrice })?.lowPrice
+        guard let minPrice: Double = self.scrollFilteredCandleSticks.min(
+            by: { $0.lowPrice < $1.lowPrice })?.lowPrice
         else {
             return
         }
@@ -351,10 +370,14 @@ class CandleStickChartView: UIView {
     }
     
     private func getYCoord(of current: Double) -> CGFloat? {
-        guard let maxPrice: Double = self.candleSticks.max(by: { $0.highPrice < $1.highPrice })?.highPrice else {
+        guard let maxPrice: Double = self.scrollFilteredCandleSticks.max(
+            by: { $0.highPrice < $1.highPrice })?.highPrice
+        else {
             return nil
         }
-        guard let minPrice: Double = self.candleSticks.min(by: { $0.lowPrice < $1.lowPrice })?.lowPrice else {
+        guard let minPrice: Double = self.scrollFilteredCandleSticks.min(
+            by: { $0.lowPrice < $1.lowPrice })?.lowPrice
+        else {
             return nil
         }
         let chartContentHeight: CGFloat = self.bounds.size.height - self.dateTimeHeight
@@ -367,7 +390,7 @@ class CandleStickChartView: UIView {
         return (self.horizontalFrontRearSpace + self.candleStickWidth / 2.0) +
         CGFloat(index - 1) * (self.candleStickWidth + self.candleStickSpace)
     }
-    
+        
     @objc func handlePinch(_ pinch: UIPinchGestureRecognizer) {
         self.candleStickWidth *= pinch.scale
         self.candleStickSpace *= pinch.scale
@@ -406,6 +429,12 @@ extension CandleStickChartView {
             /// 음봉
             case blue
         }
+    }
+}
+
+extension CandleStickChartView: UIScrollViewDelegate {
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        setNeedsLayout()
     }
 }
 
