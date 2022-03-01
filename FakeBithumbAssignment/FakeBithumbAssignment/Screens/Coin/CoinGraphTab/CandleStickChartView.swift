@@ -52,13 +52,13 @@ class CandleStickChartView: UIView {
     /// 아래 날짜, 시간 영역의 높이
     private let dateTimeHeight: CGFloat = 40.0
     /// 한 화면에 나올 날짜, 시간 레이블의 개수
-    private let numbersOfDateTimeInFrame: Int = 4
+    private let numbersOfDateTimeInFrame: Int = 3
     /// 수치 표시할 때 튀어나온 선 길이
     private let thornLength: CGFloat = 10.0
     /// 수치 표시할 때 튀어나온 선 - 수치 텍스트 간격
     private let thornTextSpace: CGFloat = 5.0
     /// 날짜, 시간 레이블의 크기
-    private let defaultTextSize: CGSize = CGSize(width: 40.0, height: 20.0)
+    private let defaultTextSize: CGSize = CGSize(width: 60.0, height: 20.0)
     /// 캔들스틱 너비
     private var candleStickWidth: CGFloat = 5.0
     /// 캔들스틱 얇은 선 너비
@@ -254,11 +254,8 @@ class CandleStickChartView: UIView {
         let drawPerCandleStickCount: Int = Int(
             (self.scrollView.bounds.size.width / CGFloat(self.numbersOfDateTimeInFrame)) / (self.candleStickWidth + self.candleStickSpace)
         )
-//        let dateFormatter = DateFormatter().then {
-//            $0.dateFormat = "yy.MM.dd"
-//        }
-        let timeFormatter = DateFormatter().then {
-            $0.dateFormat = "HH:mm"
+        let dateTimeFormatter = DateFormatter().then {
+            $0.dateFormat = "MM/dd HH:mm"
         }
         self.candleSticks.indices.forEach {
             let index: Int = self.candleSticks.count - 1 - $0
@@ -286,7 +283,7 @@ class CandleStickChartView: UIView {
                 $0.contentsScale = UIScreen.main.scale
                 $0.font = CTFontCreateWithName(UIFont.systemFont(ofSize: 0).fontName as CFString, 0, nil)
                 $0.fontSize = self.defaultFontSize
-                $0.string = timeFormatter.string(from: date)
+                $0.string = dateTimeFormatter.string(from: date)
             }
             self.dateTimeLayer.addSublayer(thornLineLayer)
             self.dateTimeLayer.addSublayer(textLayer)
