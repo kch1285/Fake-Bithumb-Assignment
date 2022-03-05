@@ -79,6 +79,9 @@ class CandleStickChartView: UIView {
         didSet {
             DispatchQueue.main.async { [weak self] in
                 self?.setNeedsLayout()
+            }
+        }
+    }
     /// 현재 스크롤 프레임에 보이는 캔들스틱 값들
     private var scrollFilteredCandleSticks: [CandleStick] {
         get {
@@ -394,7 +397,7 @@ class CandleStickChartView: UIView {
         return (self.horizontalFrontRearSpace + self.candleStickWidth / 2.0) +
         CGFloat(index - 1) * (self.candleStickWidth + self.candleStickSpace)
     }
-        
+    
     @objc func handlePinch(_ pinch: UIPinchGestureRecognizer) {
         self.candleStickWidth *= pinch.scale
         self.candleStickSpace *= pinch.scale
