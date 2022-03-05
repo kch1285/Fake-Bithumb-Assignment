@@ -14,7 +14,6 @@
 		1504F6CC27C5F58900A5EC6C /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504F6CB27C5F58900A5EC6C /* NSObject+Extension.swift */; };
 		1504F6CE27C5F64D00A5EC6C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504F6CD27C5F64D00A5EC6C /* MainViewController.swift */; };
 		1504F6D027C5F66200A5EC6C /* CoinQuoteInformationTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504F6CF27C5F66200A5EC6C /* CoinQuoteInformationTabViewController.swift */; };
-		1504F6D227C5F66D00A5EC6C /* CoinGraphTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504F6D127C5F66D00A5EC6C /* CoinGraphTabViewController.swift */; };
 		1504F6D427C5F67F00A5EC6C /* CoinContractDetailsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504F6D327C5F67F00A5EC6C /* CoinContractDetailsTabViewController.swift */; };
 		1504F6D627C5F68E00A5EC6C /* DepositAndWithdrawalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504F6D527C5F68E00A5EC6C /* DepositAndWithdrawalViewController.swift */; };
 		1504F6D827C5F70B00A5EC6C /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504F6D727C5F70B00A5EC6C /* CoinViewController.swift */; };
@@ -31,12 +30,58 @@
 		153D784B27C3F07100C940AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153D784A27C3F07100C940AB /* Assets.xcassets */; };
 		153D784E27C3F07100C940AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153D784C27C3F07100C940AB /* LaunchScreen.storyboard */; };
 		153D786927C4CFFC00C940AB /* FakeBithumbAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153D786827C4CFFC00C940AB /* FakeBithumbAssignmentTests.swift */; };
+		15564DAC27CEFA5100BF9314 /* SellGraphTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15564DAB27CEFA5100BF9314 /* SellGraphTableViewController.swift */; };
+		15564DAF27CEFB2800BF9314 /* ConclusionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15564DAE27CEFB2800BF9314 /* ConclusionTableViewController.swift */; };
+		15564DB127CEFB4400BF9314 /* QuoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15564DB027CEFB4400BF9314 /* QuoteTableViewController.swift */; };
+		15564DB627CEFBB200BF9314 /* BuyGraphTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15564DB527CEFBB200BF9314 /* BuyGraphTableViewController.swift */; };
+		15564DB827CF03A700BF9314 /* QuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15564DB727CF03A700BF9314 /* QuoteTableViewCell.swift */; };
+		15564DBB27CF0AC400BF9314 /* SellGraphTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15564DBA27CF0AC400BF9314 /* SellGraphTableViewCell.swift */; };
+		15564DBD27CF0D9000BF9314 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15564DBC27CF0D9000BF9314 /* UITableView+Extension.swift */; };
+		15564DBF27CF73E100BF9314 /* BuyGraphTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15564DBE27CF73E100BF9314 /* BuyGraphTableViewCell.swift */; };
+		15564DC127CF7C0C00BF9314 /* CoinFirstInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15564DC027CF7C0C00BF9314 /* CoinFirstInformationView.swift */; };
+		15564DC327CF7C1C00BF9314 /* CoinSecondInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15564DC227CF7C1C00BF9314 /* CoinSecondInformationView.swift */; };
+		15564DC527CFC2C600BF9314 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15564DC427CFC2C600BF9314 /* UIScrollView+Extension.swift */; };
+		158731A127CB715A0018E67B /* CoinHeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158731A027CB715A0018E67B /* CoinHeaderModel.swift */; };
+		158731A327CB75790018E67B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158731A227CB75790018E67B /* String+Extension.swift */; };
+		15ACAE9527C9B69900AB7EDC /* CoinNavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ACAE9427C9B69900AB7EDC /* CoinNavigationTitleView.swift */; };
+		15ACAE9927C9DEC900AB7EDC /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ACAE9827C9DEC900AB7EDC /* UICollectionView+Extension.swift */; };
+		15ACAE9E27CA061100AB7EDC /* CoinHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ACAE9D27CA061100AB7EDC /* CoinHeaderView.swift */; };
+		15ACAEA227CA26F300AB7EDC /* CoinPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ACAEA127CA26F300AB7EDC /* CoinPagingViewController.swift */; };
+		4320861527CE0473002CFDBF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4320861427CE0473002CFDBF /* Category.swift */; };
+		4320861727CE0615002CFDBF /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4320861627CE0615002CFDBF /* Section.swift */; };
+		4320861927CFB54C002CFDBF /* TotalCoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4320861827CFB54C002CFDBF /* TotalCoinListView.swift */; };
+		4320861B27CFC4F3002CFDBF /* InterestedCoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4320861A27CFC4F3002CFDBF /* InterestedCoinListView.swift */; };
+		4320861D27CFCCE2002CFDBF /* CoinDelgate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4320861C27CFCCE2002CFDBF /* CoinDelgate.swift */; };
+		4320862527D06CDE002CFDBF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4320862427D06CDE002CFDBF /* SearchView.swift */; };
+		4345B76627D28AFA007FA9F7 /* Loopable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4345B76527D28AFA007FA9F7 /* Loopable.swift */; };
+		43BEFF7727C9B99800FFA217 /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BEFF7627C9B99800FFA217 /* CoinTableViewCell.swift */; };
+		43CACF7927D268EC005EB9B7 /* TickerAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CACF7827D268EC005EB9B7 /* TickerAPIService.swift */; };
+		43CACF7B27D26946005EB9B7 /* TickerEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CACF7A27D26946005EB9B7 /* TickerEndPoint.swift */; };
+		43EE309327CDDD4D00130EC1 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EE309227CDDD4D00130EC1 /* Coin.swift */; };
+		43EE309727CDEF3700130EC1 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EE309627CDEF3700130EC1 /* CoinData.swift */; };
 		43F60EC327C6874A0027699B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F60EC227C6874A0027699B /* HeaderView.swift */; };
 		43F60EC527C7666A0027699B /* ColumnNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F60EC427C7666A0027699B /* ColumnNameView.swift */; };
-		7711825CBF106F792BE9AEE8 /* Pods_FakeBithumbAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1279322932B4E6EF0923160F /* Pods_FakeBithumbAssignmentTests.framework */; };
-		BA184E6AA3D8A24E0F0DD080 /* Pods_FakeBithumbAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396F2646855BEFF936DFF560 /* Pods_FakeBithumbAssignment.framework */; };
-		FA4093A127CA43D800EFA433 /* CandleStickChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4093A027CA43D800EFA433 /* CandleStickChartView.swift */; };
+		43F66EAD27D1C2B2004C9B06 /* SortOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F66EAC27D1C2B2004C9B06 /* SortOption.swift */; };
+		43F66EAF27D1CD0F004C9B06 /* Notification.Name+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F66EAE27D1CD0F004C9B06 /* Notification.Name+Extension.swift */; };
+		FA4C65F027D2958A00786469 /* CandleStickChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C65ED27D2958A00786469 /* CandleStickChartView.swift */; };
+		FA4C65F127D2958A00786469 /* IntervalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C65EE27D2958A00786469 /* IntervalButton.swift */; };
+		FA4C65F227D2958A00786469 /* CandleStickChartTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C65EF27D2958A00786469 /* CandleStickChartTabViewController.swift */; };
+		FA4C65F727D295A900786469 /* BTCandleStick+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C65F327D295A900786469 /* BTCandleStick+CoreDataClass.swift */; };
+		FA4C65F827D295A900786469 /* BithumbAPI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA4C65F427D295A900786469 /* BithumbAPI.xcdatamodeld */; };
+		FA4C65F927D295A900786469 /* BTCandleStick+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C65F627D295A900786469 /* BTCandleStick+CoreDataProperties.swift */; };
+		FA4C65FB27D295B400786469 /* BTCandleStickAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C65FA27D295B400786469 /* BTCandleStickAPIService.swift */; };
+		FA4C65FD27D295D900786469 /* BTCandleStickResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C65FC27D295D900786469 /* BTCandleStickResponse.swift */; };
+		FA4C65FF27D2960B00786469 /* StringOrInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C65FE27D2960B00786469 /* StringOrInt.swift */; };
+		FABFF57D27CFFD83000B65E6 /* BTCandleStickRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFF57C27CFFD83000B65E6 /* BTCandleStickRepository.swift */; };
+    	43F66EB727D1E52D004C9B06 /* AllTickerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F66EB627D1E52D004C9B06 /* AllTickerResponse.swift */; };
+		560F6282225D043E542509BC /* Pods_FakeBithumbAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C088A727AD09503EE5E4ACC /* Pods_FakeBithumbAssignmentTests.framework */; };
+		E8FE79FD3BAD0C02A5568BBB /* Pods_FakeBithumbAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D43C2E6B906412E3436BAB9 /* Pods_FakeBithumbAssignment.framework */; };
+		FA041BBC27C7FA5F0053C996 /* BTSocketAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA041BBB27C7FA5F0053C996 /* BTSocketAPIService.swift */; };
+		FA79223327C63F3700D1246A /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA79223227C63F3700D1246A /* WebSocketService.swift */; };
 		FAA2E36827CBB7D5003E3184 /* CoreAnimation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2E36727CBB7D5003E3184 /* CoreAnimation+Extension.swift */; };
+		FAC7F95B27C65A60001E11DA /* BTSocketAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7F95A27C65A60001E11DA /* BTSocketAPIResponse.swift */; };
+		FAC7F95D27C65AC0001E11DA /* BTSocketAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7F95C27C65AC0001E11DA /* BTSocketAPIRequest.swift */; };
+		FAC7F96127C768B5001E11DA /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7F96027C768B5001E11DA /* JSONDecoder+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +95,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1163C06D87FBF0E8CE840CCB /* Pods-FakeBithumbAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeBithumbAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-FakeBithumbAssignmentTests/Pods-FakeBithumbAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
-		1279322932B4E6EF0923160F /* Pods_FakeBithumbAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeBithumbAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E13792AB3CEE8B3BD774108 /* Pods-FakeBithumbAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeBithumbAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-FakeBithumbAssignmentTests/Pods-FakeBithumbAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1504F6C327C5F26000A5EC6C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1504F6C527C5F3D900A5EC6C /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		1504F6C727C5F40300A5EC6C /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
@@ -59,7 +103,6 @@
 		1504F6CB27C5F58900A5EC6C /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		1504F6CD27C5F64D00A5EC6C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1504F6CF27C5F66200A5EC6C /* CoinQuoteInformationTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinQuoteInformationTabViewController.swift; sourceTree = "<group>"; };
-		1504F6D127C5F66D00A5EC6C /* CoinGraphTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGraphTabViewController.swift; sourceTree = "<group>"; };
 		1504F6D327C5F67F00A5EC6C /* CoinContractDetailsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinContractDetailsTabViewController.swift; sourceTree = "<group>"; };
 		1504F6D527C5F68E00A5EC6C /* DepositAndWithdrawalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositAndWithdrawalViewController.swift; sourceTree = "<group>"; };
 		1504F6D727C5F70B00A5EC6C /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
@@ -79,14 +122,62 @@
 		153D784F27C3F07100C940AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		153D786627C4CFFC00C940AB /* FakeBithumbAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FakeBithumbAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		153D786827C4CFFC00C940AB /* FakeBithumbAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBithumbAssignmentTests.swift; sourceTree = "<group>"; };
-		396F2646855BEFF936DFF560 /* Pods_FakeBithumbAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeBithumbAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15564DAB27CEFA5100BF9314 /* SellGraphTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellGraphTableViewController.swift; sourceTree = "<group>"; };
+		15564DAE27CEFB2800BF9314 /* ConclusionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConclusionTableViewController.swift; sourceTree = "<group>"; };
+		15564DB027CEFB4400BF9314 /* QuoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTableViewController.swift; sourceTree = "<group>"; };
+		15564DB527CEFBB200BF9314 /* BuyGraphTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyGraphTableViewController.swift; sourceTree = "<group>"; };
+		15564DB727CF03A700BF9314 /* QuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTableViewCell.swift; sourceTree = "<group>"; };
+		15564DBA27CF0AC400BF9314 /* SellGraphTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellGraphTableViewCell.swift; sourceTree = "<group>"; };
+		15564DBC27CF0D9000BF9314 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		15564DBE27CF73E100BF9314 /* BuyGraphTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyGraphTableViewCell.swift; sourceTree = "<group>"; };
+		15564DC027CF7C0C00BF9314 /* CoinFirstInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFirstInformationView.swift; sourceTree = "<group>"; };
+		15564DC227CF7C1C00BF9314 /* CoinSecondInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSecondInformationView.swift; sourceTree = "<group>"; };
+		15564DC427CFC2C600BF9314 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
+		158731A027CB715A0018E67B /* CoinHeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinHeaderModel.swift; sourceTree = "<group>"; };
+		158731A227CB75790018E67B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		15ACAE9427C9B69900AB7EDC /* CoinNavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinNavigationTitleView.swift; sourceTree = "<group>"; };
+		15ACAE9827C9DEC900AB7EDC /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		15ACAE9D27CA061100AB7EDC /* CoinHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinHeaderView.swift; sourceTree = "<group>"; };
+		15ACAEA127CA26F300AB7EDC /* CoinPagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinPagingViewController.swift; sourceTree = "<group>"; };
+		31928FD3DB50A78B294459C0 /* Pods-FakeBithumbAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeBithumbAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-FakeBithumbAssignmentTests/Pods-FakeBithumbAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		4320861427CE0473002CFDBF /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4320861627CE0615002CFDBF /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		4320861827CFB54C002CFDBF /* TotalCoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCoinListView.swift; sourceTree = "<group>"; };
+		4320861A27CFC4F3002CFDBF /* InterestedCoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestedCoinListView.swift; sourceTree = "<group>"; };
+		4320861C27CFCCE2002CFDBF /* CoinDelgate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDelgate.swift; sourceTree = "<group>"; };
+		4320862427D06CDE002CFDBF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		4345B76527D28AFA007FA9F7 /* Loopable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loopable.swift; sourceTree = "<group>"; };
+		43BEFF7627C9B99800FFA217 /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
+		43CACF7827D268EC005EB9B7 /* TickerAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerAPIService.swift; sourceTree = "<group>"; };
+		43CACF7A27D26946005EB9B7 /* TickerEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerEndPoint.swift; sourceTree = "<group>"; };
+		43EE309227CDDD4D00130EC1 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		43EE309627CDEF3700130EC1 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 		43F60EC227C6874A0027699B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		43F60EC427C7666A0027699B /* ColumnNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnNameView.swift; sourceTree = "<group>"; };
-		DAB1402CB2E7430FBF8CAFB6 /* Pods-FakeBithumbAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeBithumbAssignment.release.xcconfig"; path = "Target Support Files/Pods-FakeBithumbAssignment/Pods-FakeBithumbAssignment.release.xcconfig"; sourceTree = "<group>"; };
-		FA4093A027CA43D800EFA433 /* CandleStickChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStickChartView.swift; sourceTree = "<group>"; };
+		43F66EAC27D1C2B2004C9B06 /* SortOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOption.swift; sourceTree = "<group>"; };
+		43F66EAE27D1CD0F004C9B06 /* Notification.Name+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+Extension.swift"; sourceTree = "<group>"; };
+		43F66EB627D1E52D004C9B06 /* AllTickerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTickerResponse.swift; sourceTree = "<group>"; };
+		43F66EBA27D1E5FA004C9B06 /* TransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionResponse.swift; sourceTree = "<group>"; };
+		5C088A727AD09503EE5E4ACC /* Pods_FakeBithumbAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeBithumbAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D43C2E6B906412E3436BAB9 /* Pods_FakeBithumbAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeBithumbAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73B6FB0421C21C09E1FF0F1F /* Pods-FakeBithumbAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeBithumbAssignment.release.xcconfig"; path = "Target Support Files/Pods-FakeBithumbAssignment/Pods-FakeBithumbAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		AE02598F192C0E80255BEA38 /* Pods-FakeBithumbAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeBithumbAssignment.debug.xcconfig"; path = "Target Support Files/Pods-FakeBithumbAssignment/Pods-FakeBithumbAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		FA041BBB27C7FA5F0053C996 /* BTSocketAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTSocketAPIService.swift; sourceTree = "<group>"; };
+		FA4C65ED27D2958A00786469 /* CandleStickChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CandleStickChartView.swift; path = FakeBithumbAssignment/Screens/Coin/Tabs/CandleStickChartTab/CandleStickChartView.swift; sourceTree = SOURCE_ROOT; };
+		FA4C65EE27D2958A00786469 /* IntervalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntervalButton.swift; path = FakeBithumbAssignment/Screens/Coin/Tabs/CandleStickChartTab/IntervalButton.swift; sourceTree = SOURCE_ROOT; };
+		FA4C65EF27D2958A00786469 /* CandleStickChartTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CandleStickChartTabViewController.swift; path = FakeBithumbAssignment/Screens/Coin/Tabs/CandleStickChartTab/CandleStickChartTabViewController.swift; sourceTree = SOURCE_ROOT; };
+		FA4C65F327D295A900786469 /* BTCandleStick+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BTCandleStick+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA4C65F527D295A900786469 /* BithumbAPI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BithumbAPI.xcdatamodel; sourceTree = "<group>"; };
+		FA4C65F627D295A900786469 /* BTCandleStick+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BTCandleStick+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA4C65FA27D295B400786469 /* BTCandleStickAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCandleStickAPIService.swift; sourceTree = "<group>"; };
+		FA4C65FC27D295D900786469 /* BTCandleStickResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BTCandleStickResponse.swift; path = Model/BTCandleStickResponse.swift; sourceTree = "<group>"; };
+		FA4C65FE27D2960B00786469 /* StringOrInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringOrInt.swift; sourceTree = "<group>"; };
+		FABFF57C27CFFD83000B65E6 /* BTCandleStickRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCandleStickRepository.swift; sourceTree = "<group>"; };
+		FA79223227C63F3700D1246A /* WebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
 		FAA2E36727CBB7D5003E3184 /* CoreAnimation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreAnimation+Extension.swift"; sourceTree = "<group>"; };
-		FAE3F28730A0F75D468665D0 /* Pods-FakeBithumbAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeBithumbAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-FakeBithumbAssignmentTests/Pods-FakeBithumbAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FB1DF18649FC3F7763F4408E /* Pods-FakeBithumbAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeBithumbAssignment.debug.xcconfig"; path = "Target Support Files/Pods-FakeBithumbAssignment/Pods-FakeBithumbAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		FAC7F95A27C65A60001E11DA /* BTSocketAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BTSocketAPIResponse.swift; path = FakeBithumbAssignment/Network/Model/BTSocketAPIResponse.swift; sourceTree = SOURCE_ROOT; };
+		FAC7F95C27C65AC0001E11DA /* BTSocketAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BTSocketAPIRequest.swift; path = FakeBithumbAssignment/Network/Model/BTSocketAPIRequest.swift; sourceTree = SOURCE_ROOT; };
+		FAC7F96027C768B5001E11DA /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA184E6AA3D8A24E0F0DD080 /* Pods_FakeBithumbAssignment.framework in Frameworks */,
+				E8FE79FD3BAD0C02A5568BBB /* Pods_FakeBithumbAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7711825CBF106F792BE9AEE8 /* Pods_FakeBithumbAssignmentTests.framework in Frameworks */,
+				560F6282225D043E542509BC /* Pods_FakeBithumbAssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +211,7 @@
 				1504F73127C6338100A5EC6C /* Requestable.swift */,
 				1504F73327C6339D00A5EC6C /* HttpService.swift */,
 				1504F73527C6363400A5EC6C /* NetworkStatus.swift */,
+				FA79223227C63F3700D1246A /* WebSocketService.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -127,13 +219,17 @@
 		1504F72027C630D600A5EC6C /* API */ = {
 			isa = PBXGroup;
 			children = (
+				43CACF7A27D26946005EB9B7 /* TickerEndPoint.swift */,
 			);
-			path = API;
+			name = API;
 			sourceTree = "<group>";
 		};
 		1504F72127C6310100A5EC6C /* APIService */ = {
 			isa = PBXGroup;
 			children = (
+				FA4C65FA27D295B400786469 /* BTCandleStickAPIService.swift */,
+				FA041BBB27C7FA5F0053C996 /* BTSocketAPIService.swift */,
+				43CACF7827D268EC005EB9B7 /* TickerAPIService.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -141,15 +237,13 @@
 		1504F72227C6310A00A5EC6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA4C65FC27D295D900786469 /* BTCandleStickResponse.swift */,
+				FAC7F95A27C65A60001E11DA /* BTSocketAPIResponse.swift */,
+				FAC7F95C27C65AC0001E11DA /* BTSocketAPIRequest.swift */,
+				43F66EB627D1E52D004C9B06 /* AllTickerResponse.swift */,
+				43F66EBA27D1E5FA004C9B06 /* TransactionResponse.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		1504F72327C6310F00A5EC6C /* Serviceable */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Serviceable;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		153D783527C3F06F00C940AB = {
@@ -158,8 +252,8 @@
 				153D784027C3F07000C940AB /* FakeBithumbAssignment */,
 				153D786727C4CFFC00C940AB /* FakeBithumbAssignmentTests */,
 				153D783F27C3F07000C940AB /* Products */,
-				527E3AD7F5B3D4AC28CFDCFA /* Pods */,
-				7751250F7A514C3DB0A8E8C9 /* Frameworks */,
+				DEE7FDEE061D445EDFB6A650 /* Pods */,
+				FA40D877F2AC738A5C446C10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,9 +279,71 @@
 		153D786727C4CFFC00C940AB /* FakeBithumbAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				FA40939A27C82B8A00EFA433 /* Network */,
 				153D786827C4CFFC00C940AB /* FakeBithumbAssignmentTests.swift */,
 			);
 			path = FakeBithumbAssignmentTests;
+			sourceTree = "<group>";
+		};
+		15564DAD27CEFB0200BF9314 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15564DAB27CEFA5100BF9314 /* SellGraphTableViewController.swift */,
+				15564DAE27CEFB2800BF9314 /* ConclusionTableViewController.swift */,
+				15564DB027CEFB4400BF9314 /* QuoteTableViewController.swift */,
+				15564DB527CEFBB200BF9314 /* BuyGraphTableViewController.swift */,
+				15564DC027CF7C0C00BF9314 /* CoinFirstInformationView.swift */,
+				15564DC227CF7C1C00BF9314 /* CoinSecondInformationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15564DB927CF03AB00BF9314 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				15564DBA27CF0AC400BF9314 /* SellGraphTableViewCell.swift */,
+				15564DB727CF03A700BF9314 /* QuoteTableViewCell.swift */,
+				15564DBE27CF73E100BF9314 /* BuyGraphTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1587319F27CB71270018E67B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				158731A027CB715A0018E67B /* CoinHeaderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15ACAE9A27CA052300AB7EDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15ACAE9D27CA061100AB7EDC /* CoinHeaderView.swift */,
+				15ACAE9427C9B69900AB7EDC /* CoinNavigationTitleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15ACAE9B27CA052A00AB7EDC /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				15BE7A6D27C5E64B0007FB2F /* CoinQuoteInformationTab */,
+				15BE7A6E27C5E6620007FB2F /* CandleStickChartTab */,
+				15BE7A6F27C5E6AB0007FB2F /* CoinContractDetailsTab */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		15ACAE9C27CA059000AB7EDC /* Paging */ = {
+			isa = PBXGroup;
+			children = (
+				1504F6D727C5F70B00A5EC6C /* CoinViewController.swift */,
+				15ACAEA127CA26F300AB7EDC /* CoinPagingViewController.swift */,
+				15ACAE9A27CA052300AB7EDC /* View */,
+				1587319F27CB71270018E67B /* Model */,
+			);
+			path = Paging;
 			sourceTree = "<group>";
 		};
 		15BE7A6127C5DB470007FB2F /* Network */ = {
@@ -197,7 +353,6 @@
 				1504F72027C630D600A5EC6C /* API */,
 				1504F72127C6310100A5EC6C /* APIService */,
 				1504F72227C6310A00A5EC6C /* Model */,
-				1504F72327C6310F00A5EC6C /* Serviceable */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -205,6 +360,7 @@
 		15BE7A6227C5DB4E0007FB2F /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				FABFF57927CFFBAE000B65E6 /* Persistent */,
 				15BE7A6427C5DB740007FB2F /* Base */,
 				15BE7A6527C5DB7B0007FB2F /* Extension */,
 				15BE7A6727C5DB8C0007FB2F /* Utils */,
@@ -227,6 +383,7 @@
 		15BE7A6427C5DB740007FB2F /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				FA4C65FE27D2960B00786469 /* StringOrInt.swift */,
 				1504F6C327C5F26000A5EC6C /* BaseViewController.swift */,
 				1504F6C527C5F3D900A5EC6C /* BaseCollectionViewCell.swift */,
 				1504F6C727C5F40300A5EC6C /* BaseTableViewCell.swift */,
@@ -240,6 +397,12 @@
 				1504F6C927C5F47C00A5EC6C /* UIView+Extension.swift */,
 				1504F6CB27C5F58900A5EC6C /* NSObject+Extension.swift */,
 				FAA2E36727CBB7D5003E3184 /* CoreAnimation+Extension.swift */,
+				FAC7F96027C768B5001E11DA /* JSONDecoder+Extension.swift */,
+				15ACAE9827C9DEC900AB7EDC /* UICollectionView+Extension.swift */,
+				158731A227CB75790018E67B /* String+Extension.swift */,
+				43F66EAE27D1CD0F004C9B06 /* Notification.Name+Extension.swift */,
+				15564DBC27CF0D9000BF9314 /* UITableView+Extension.swift */,
+				15564DC427CFC2C600BF9314 /* UIScrollView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -256,8 +419,9 @@
 		15BE7A6727C5DB8C0007FB2F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4345B76527D28AFA007FA9F7 /* Loopable.swift */,
 			);
-			path = Utils;
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		15BE7A6827C5DB990007FB2F /* Supports */ = {
@@ -273,6 +437,7 @@
 		15BE7A6A27C5DC5B0007FB2F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4320861327CE045D002CFDBF /* Model */,
 				43F60EBB27C6524A0027699B /* View */,
 				1504F6CD27C5F64D00A5EC6C /* MainViewController.swift */,
 			);
@@ -282,10 +447,8 @@
 		15BE7A6B27C5DC9E0007FB2F /* Coin */ = {
 			isa = PBXGroup;
 			children = (
-				1504F6D727C5F70B00A5EC6C /* CoinViewController.swift */,
-				15BE7A6D27C5E64B0007FB2F /* CoinQuoteInformationTab */,
-				15BE7A6E27C5E6620007FB2F /* CoinGraphTab */,
-				15BE7A6F27C5E6AB0007FB2F /* CoinContractDetailsTab */,
+				15ACAE9C27CA059000AB7EDC /* Paging */,
+				15ACAE9B27CA052A00AB7EDC /* Tabs */,
 			);
 			path = Coin;
 			sourceTree = "<group>";
@@ -302,17 +465,20 @@
 			isa = PBXGroup;
 			children = (
 				1504F6CF27C5F66200A5EC6C /* CoinQuoteInformationTabViewController.swift */,
+				15564DAD27CEFB0200BF9314 /* View */,
+				15564DB927CF03AB00BF9314 /* Cell */,
 			);
 			path = CoinQuoteInformationTab;
 			sourceTree = "<group>";
 		};
-		15BE7A6E27C5E6620007FB2F /* CoinGraphTab */ = {
+		15BE7A6E27C5E6620007FB2F /* CandleStickChartTab */ = {
 			isa = PBXGroup;
 			children = (
-				1504F6D127C5F66D00A5EC6C /* CoinGraphTabViewController.swift */,
-				FA4093A027CA43D800EFA433 /* CandleStickChartView.swift */,
+				FA4C65EF27D2958A00786469 /* CandleStickChartTabViewController.swift */,
+				FA4C65ED27D2958A00786469 /* CandleStickChartView.swift */,
+				FA4C65EE27D2958A00786469 /* IntervalButton.swift */,
 			);
-			path = CoinGraphTab;
+			path = CandleStickChartTab;
 			sourceTree = "<group>";
 		};
 		15BE7A6F27C5E6AB0007FB2F /* CoinContractDetailsTab */ = {
@@ -323,33 +489,76 @@
 			path = CoinContractDetailsTab;
 			sourceTree = "<group>";
 		};
+		4320861327CE045D002CFDBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43EE309227CDDD4D00130EC1 /* Coin.swift */,
+				43EE309627CDEF3700130EC1 /* CoinData.swift */,
+				4320861427CE0473002CFDBF /* Category.swift */,
+				4320861627CE0615002CFDBF /* Section.swift */,
+				4320861C27CFCCE2002CFDBF /* CoinDelgate.swift */,
+				43F66EAC27D1C2B2004C9B06 /* SortOption.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		43F60EBB27C6524A0027699B /* View */ = {
 			isa = PBXGroup;
 			children = (
 				43F60EC227C6874A0027699B /* HeaderView.swift */,
 				43F60EC427C7666A0027699B /* ColumnNameView.swift */,
+				43BEFF7627C9B99800FFA217 /* CoinTableViewCell.swift */,
+				4320861827CFB54C002CFDBF /* TotalCoinListView.swift */,
+				4320861A27CFC4F3002CFDBF /* InterestedCoinListView.swift */,
+				4320862427D06CDE002CFDBF /* SearchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		527E3AD7F5B3D4AC28CFDCFA /* Pods */ = {
+		DEE7FDEE061D445EDFB6A650 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FB1DF18649FC3F7763F4408E /* Pods-FakeBithumbAssignment.debug.xcconfig */,
-				DAB1402CB2E7430FBF8CAFB6 /* Pods-FakeBithumbAssignment.release.xcconfig */,
-				FAE3F28730A0F75D468665D0 /* Pods-FakeBithumbAssignmentTests.debug.xcconfig */,
-				1163C06D87FBF0E8CE840CCB /* Pods-FakeBithumbAssignmentTests.release.xcconfig */,
+				AE02598F192C0E80255BEA38 /* Pods-FakeBithumbAssignment.debug.xcconfig */,
+				73B6FB0421C21C09E1FF0F1F /* Pods-FakeBithumbAssignment.release.xcconfig */,
+				0E13792AB3CEE8B3BD774108 /* Pods-FakeBithumbAssignmentTests.debug.xcconfig */,
+				31928FD3DB50A78B294459C0 /* Pods-FakeBithumbAssignmentTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		7751250F7A514C3DB0A8E8C9 /* Frameworks */ = {
+		FA40939A27C82B8A00EFA433 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				396F2646855BEFF936DFF560 /* Pods_FakeBithumbAssignment.framework */,
-				1279322932B4E6EF0923160F /* Pods_FakeBithumbAssignmentTests.framework */,
+				FA40939B27C82B9800EFA433 /* APIService */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		FA40939B27C82B9800EFA433 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = APIService;
+			sourceTree = "<group>";
+		};
+		FA40D877F2AC738A5C446C10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D43C2E6B906412E3436BAB9 /* Pods_FakeBithumbAssignment.framework */,
+				5C088A727AD09503EE5E4ACC /* Pods_FakeBithumbAssignmentTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FABFF57927CFFBAE000B65E6 /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				FA4C65F427D295A900786469 /* BithumbAPI.xcdatamodeld */,
+				FA4C65F327D295A900786469 /* BTCandleStick+CoreDataClass.swift */,
+				FA4C65F627D295A900786469 /* BTCandleStick+CoreDataProperties.swift */,
+				FABFF57C27CFFD83000B65E6 /* BTCandleStickRepository.swift */,
+			);
+			path = Persistent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,11 +568,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 153D785227C3F07100C940AB /* Build configuration list for PBXNativeTarget "FakeBithumbAssignment" */;
 			buildPhases = (
-				EDEAB6F9F087CD694026BBF4 /* [CP] Check Pods Manifest.lock */,
+				310AE56540756FB2D7793E86 /* [CP] Check Pods Manifest.lock */,
 				153D783A27C3F07000C940AB /* Sources */,
 				153D783B27C3F07000C940AB /* Frameworks */,
 				153D783C27C3F07000C940AB /* Resources */,
-				0A8E0CF58A3AFFE690B40ECE /* [CP] Embed Pods Frameworks */,
+				76F0AFFE9E54FC3D18F7F55D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -378,7 +587,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 153D786C27C4CFFC00C940AB /* Build configuration list for PBXNativeTarget "FakeBithumbAssignmentTests" */;
 			buildPhases = (
-				2B7B8E30E51025257A4EBD24 /* [CP] Check Pods Manifest.lock */,
+				B0C780DDE677A961A6DACF8A /* [CP] Check Pods Manifest.lock */,
 				153D786227C4CFFC00C940AB /* Sources */,
 				153D786327C4CFFC00C940AB /* Frameworks */,
 				153D786427C4CFFC00C940AB /* Resources */,
@@ -451,46 +660,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A8E0CF58A3AFFE690B40ECE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FakeBithumbAssignment/Pods-FakeBithumbAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FakeBithumbAssignment/Pods-FakeBithumbAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FakeBithumbAssignment/Pods-FakeBithumbAssignment-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2B7B8E30E51025257A4EBD24 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FakeBithumbAssignmentTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EDEAB6F9F087CD694026BBF4 /* [CP] Check Pods Manifest.lock */ = {
+		310AE56540756FB2D7793E86 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -512,6 +682,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		76F0AFFE9E54FC3D18F7F55D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FakeBithumbAssignment/Pods-FakeBithumbAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FakeBithumbAssignment/Pods-FakeBithumbAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FakeBithumbAssignment/Pods-FakeBithumbAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0C780DDE677A961A6DACF8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FakeBithumbAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -519,31 +728,79 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43EE309727CDEF3700130EC1 /* CoinData.swift in Sources */,
+				4320861B27CFC4F3002CFDBF /* InterestedCoinListView.swift in Sources */,
+				15ACAE9927C9DEC900AB7EDC /* UICollectionView+Extension.swift in Sources */,
+				4345B76627D28AFA007FA9F7 /* Loopable.swift in Sources */,
+				15564DB827CF03A700BF9314 /* QuoteTableViewCell.swift in Sources */,
 				1504F73227C6338100A5EC6C /* Requestable.swift in Sources */,
+				43F66EAD27D1C2B2004C9B06 /* SortOption.swift in Sources */,
+				15564DB127CEFB4400BF9314 /* QuoteTableViewController.swift in Sources */,
 				1504F6D627C5F68E00A5EC6C /* DepositAndWithdrawalViewController.swift in Sources */,
 				1504F6C627C5F3D900A5EC6C /* BaseCollectionViewCell.swift in Sources */,
+				4320861927CFB54C002CFDBF /* TotalCoinListView.swift in Sources */,
+				43EE309327CDDD4D00130EC1 /* Coin.swift in Sources */,
 				1504F72527C6316900A5EC6C /* BaseModel.swift in Sources */,
 				1504F6CA27C5F47C00A5EC6C /* UIView+Extension.swift in Sources */,
+				15564DBF27CF73E100BF9314 /* BuyGraphTableViewCell.swift in Sources */,
+				4320862527D06CDE002CFDBF /* SearchView.swift in Sources */,
 				FAA2E36827CBB7D5003E3184 /* CoreAnimation+Extension.swift in Sources */,
+				FAC7F95B27C65A60001E11DA /* BTSocketAPIResponse.swift in Sources */,
 				1504F6CC27C5F58900A5EC6C /* NSObject+Extension.swift in Sources */,
+				FA4C65F827D295A900786469 /* BithumbAPI.xcdatamodeld in Sources */,
+				FA4C65FF27D2960B00786469 /* StringOrInt.swift in Sources */,
+				43BEFF7727C9B99800FFA217 /* CoinTableViewCell.swift in Sources */,
+				43F66EBB27D1E5FA004C9B06 /* TransactionResponse.swift in Sources */,
+				15ACAE9527C9B69900AB7EDC /* CoinNavigationTitleView.swift in Sources */,
+				15ACAEA227CA26F300AB7EDC /* CoinPagingViewController.swift in Sources */,
+				15564DBD27CF0D9000BF9314 /* UITableView+Extension.swift in Sources */,
+				15564DBB27CF0AC400BF9314 /* SellGraphTableViewCell.swift in Sources */,
+				15564DB627CEFBB200BF9314 /* BuyGraphTableViewController.swift in Sources */,
+				43F66EAF27D1CD0F004C9B06 /* Notification.Name+Extension.swift in Sources */,
 				1504F73427C6339D00A5EC6C /* HttpService.swift in Sources */,
+				FA79223327C63F3700D1246A /* WebSocketService.swift in Sources */,
+				FA4C65F027D2958A00786469 /* CandleStickChartView.swift in Sources */,
+				FAC7F96127C768B5001E11DA /* JSONDecoder+Extension.swift in Sources */,
+				1504F73427C6339D00A5EC6C /* HttpService.swift in Sources */,
+				43CACF7B27D26946005EB9B7 /* TickerEndPoint.swift in Sources */,
 				FA4093A127CA43D800EFA433 /* CandleStickChartView.swift in Sources */,
 				1504F6C427C5F26000A5EC6C /* BaseViewController.swift in Sources */,
+				FAC7F95D27C65AC0001E11DA /* BTSocketAPIRequest.swift in Sources */,
+				15564DC527CFC2C600BF9314 /* UIScrollView+Extension.swift in Sources */,
 				1504F6D027C5F66200A5EC6C /* CoinQuoteInformationTabViewController.swift in Sources */,
+				15564DC127CF7C0C00BF9314 /* CoinFirstInformationView.swift in Sources */,
+				15564DAF27CEFB2800BF9314 /* ConclusionTableViewController.swift in Sources */,
+				FA4C65FB27D295B400786469 /* BTCandleStickAPIService.swift in Sources */,
 				1504F72D27C6322500A5EC6C /* HttpServiceError.swift in Sources */,
 				1504F72727C631A500A5EC6C /* HttpMethod.swift in Sources */,
 				153D784227C3F07000C940AB /* AppDelegate.swift in Sources */,
 				1504F6CE27C5F64D00A5EC6C /* MainViewController.swift in Sources */,
 				1504F73627C6363400A5EC6C /* NetworkStatus.swift in Sources */,
+				FA4C65F927D295A900786469 /* BTCandleStick+CoreDataProperties.swift in Sources */,
+				FA041BBC27C7FA5F0053C996 /* BTSocketAPIService.swift in Sources */,
+				158731A327CB75790018E67B /* String+Extension.swift in Sources */,
+				158731A127CB715A0018E67B /* CoinHeaderModel.swift in Sources */,
 				1504F6D427C5F67F00A5EC6C /* CoinContractDetailsTabViewController.swift in Sources */,
-				1504F6D227C5F66D00A5EC6C /* CoinGraphTabViewController.swift in Sources */,
+				15ACAE9E27CA061100AB7EDC /* CoinHeaderView.swift in Sources */,
+				FA4C65F127D2958A00786469 /* IntervalButton.swift in Sources */,
+				43F66EB727D1E52D004C9B06 /* AllTickerResponse.swift in Sources */,
+				43CACF7927D268EC005EB9B7 /* TickerAPIService.swift in Sources */,
+				4320861527CE0473002CFDBF /* Category.swift in Sources */,
+				FA4C65F727D295A900786469 /* BTCandleStick+CoreDataClass.swift in Sources */,
 				43F60EC527C7666A0027699B /* ColumnNameView.swift in Sources */,
 				1504F6D827C5F70B00A5EC6C /* CoinViewController.swift in Sources */,
 				1504F6C827C5F40300A5EC6C /* BaseTableViewCell.swift in Sources */,
 				1504F72927C631C100A5EC6C /* HttpEnvironment.swift in Sources */,
 				1504F72F27C6324600A5EC6C /* NetworkRequest.swift in Sources */,
+				FABFF57D27CFFD83000B65E6 /* BTCandleStickRepository.swift in Sources */,
+				4320861727CE0615002CFDBF /* Section.swift in Sources */,
 				43F60EC327C6874A0027699B /* HeaderView.swift in Sources */,
+				FA4C65F227D2958A00786469 /* CandleStickChartTabViewController.swift in Sources */,
 				153D784427C3F07000C940AB /* SceneDelegate.swift in Sources */,
+				FA4C65FD27D295D900786469 /* BTCandleStickResponse.swift in Sources */,
+				4320861D27CFCCE2002CFDBF /* CoinDelgate.swift in Sources */,
+				15564DC327CF7C1C00BF9314 /* CoinSecondInformationView.swift in Sources */,
+				15564DAC27CEFA5100BF9314 /* SellGraphTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,7 +952,7 @@
 		};
 		153D785327C3F07100C940AB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB1DF18649FC3F7763F4408E /* Pods-FakeBithumbAssignment.debug.xcconfig */;
+			baseConfigurationReference = AE02598F192C0E80255BEA38 /* Pods-FakeBithumbAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -723,7 +980,7 @@
 		};
 		153D785427C3F07100C940AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAB1402CB2E7430FBF8CAFB6 /* Pods-FakeBithumbAssignment.release.xcconfig */;
+			baseConfigurationReference = 73B6FB0421C21C09E1FF0F1F /* Pods-FakeBithumbAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -751,7 +1008,7 @@
 		};
 		153D786D27C4CFFC00C940AB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAE3F28730A0F75D468665D0 /* Pods-FakeBithumbAssignmentTests.debug.xcconfig */;
+			baseConfigurationReference = 0E13792AB3CEE8B3BD774108 /* Pods-FakeBithumbAssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -770,7 +1027,7 @@
 		};
 		153D786E27C4CFFC00C940AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1163C06D87FBF0E8CE840CCB /* Pods-FakeBithumbAssignmentTests.release.xcconfig */;
+			baseConfigurationReference = 31928FD3DB50A78B294459C0 /* Pods-FakeBithumbAssignmentTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -818,6 +1075,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA4C65F427D295A900786469 /* BithumbAPI.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA4C65F527D295A900786469 /* BithumbAPI.xcdatamodel */,
+			);
+			currentVersion = FA4C65F527D295A900786469 /* BithumbAPI.xcdatamodel */;
+			path = BithumbAPI.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 153D783627C3F06F00C940AB /* Project object */;
 }
