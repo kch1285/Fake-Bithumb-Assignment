@@ -323,6 +323,9 @@ final class MainViewController: BaseViewController {
                 ) else {
                     return
                 }
+                if (coin == .BTC) {
+                    print("")
+                }
                 
                 if let findedCoin = self.totalCoinList.first(where: { $0.coinName == coin }),
                    let latestTransactions = response.last?.transactionDate.components(separatedBy: " "),

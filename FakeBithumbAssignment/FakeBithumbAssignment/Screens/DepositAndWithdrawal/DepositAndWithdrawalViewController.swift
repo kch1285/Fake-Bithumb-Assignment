@@ -182,7 +182,7 @@ extension DepositAndWithdrawalViewController {
         currentSnapshot.deleteAllItems()
         currentSnapshot.appendSections([.main])
         currentSnapshot.appendItems(to, toSection: .main)
-        self.dataSource.apply(currentSnapshot)
+        self.dataSource.apply(currentSnapshot, animatingDifferences: false)
     }
 }
 
